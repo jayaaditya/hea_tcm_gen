@@ -3,7 +3,7 @@ set-echo
 go data
 sw tchea1
 def-sy
-Cr,Mo,Nb,Ta,V,W,Al
+Cr,Mo,Nb,Ta,V,W
 get
 go p_3
 adv
@@ -21,7 +21,7 @@ for a in steps:
                         if a + b + c + d + e + f == 100:
                             com.append(map(lambda x: x/100.0,[a,b,c,d,e,f]))
 print_str="""s-co T=1000,n=1,p=1e5
-s-co x(Cr)=%.2f,x(Mo)=%.2f,x(Nb)=%.2f,x(Ta)=%.2f,x(V)=%.2f,x(W)=%.2f,x(Al)=None;
+s-co x(Cr)=%.2f,x(Mo)=%.2f,x(Nb)=%.2f,x(Ta)=%.2f,x(V)=%.2f,x(W)=%.2f;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -34,7 +34,7 @@ end_str = "set-int\n"
 iterations = len(com)
 with open('test_tc_code.TCM','w') as f1:
     f1.write(init_str)
-    for x in range(1):
+    for x in range(10):
         a,b,c,d,e,f = com[x]
         f1.write(comment %(x+1))
         f1.write(print_str %(a,b,c,d,e,f))
