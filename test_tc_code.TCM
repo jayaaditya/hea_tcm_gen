@@ -11,7 +11,7 @@ out
 @&
 @@1
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.15,x(V)=0.35,x(W)=0.35;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.15,x(V)=0.35;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -20,7 +20,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@2
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.20,x(V)=0.30,x(W)=0.35;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.20,x(V)=0.30;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -29,7 +29,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@3
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.20,x(V)=0.35,x(W)=0.30;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.20,x(V)=0.35;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -38,7 +38,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@4
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.25,x(W)=0.35;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.25;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -47,7 +47,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@5
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.30,x(W)=0.30;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.30;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -56,7 +56,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@6
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.35,x(W)=0.25;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.25,x(V)=0.35;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -65,7 +65,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@7
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.20,x(W)=0.35;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.20;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -74,7 +74,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@8
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.25,x(W)=0.30;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.25;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -83,7 +83,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@9
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.30,x(W)=0.25;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.30;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
@@ -92,7 +92,7 @@ show np(bcc_a2)
 show np(bcc_b2)
 @@10
 s-co T=1000,n=1,p=1e5
-s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.35,x(W)=0.20;
+s-co x(Cr)=0.05,x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.30,x(V)=0.35;
 c-eq
 show x(Cr),x(Mo),x(Nb),x(Ta),x(V),x(W)
 show np(fcc_a1)
