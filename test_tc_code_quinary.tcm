@@ -1,0 +1,21 @@
+set-log single_phase,,, 
+set-echo
+go data
+sw tchea1
+def-sy
+Mo,Nb,Ta,V,W
+get
+go p_3
+adv
+out
+@&
+@@1
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.05,x(Nb)=0.05,x(Ta)=0.20,x(V)=0.35;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(V),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+set-int
