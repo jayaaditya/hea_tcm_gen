@@ -1,0 +1,516 @@
+set-log single_phase,,, 
+set-echo
+go data
+sw tchea1
+def-sy
+Cr,Mo,Nb,Ta,V,W,Hf,Zr,Al
+get
+go p_3
+adv
+out
+@&
+@@1
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(Ta),x(V)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@2
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(V)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(Ta),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@3
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(Hf)=0.2,x(V)=0.0,x(W)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(Ta),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@4
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(Zr)=0.2,x(V)=0.0,x(W)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(Ta),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@5
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Ta)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(V),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@6
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(Hf)=0.2,x(Ta)=0.0,x(W)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(V),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@7
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(Zr)=0.2,x(Ta)=0.0,x(W)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(V),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@8
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(W)=0.2,x(Hf)=0.2,x(Ta)=0.0,x(V)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@9
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(W)=0.2,x(Zr)=0.2,x(Ta)=0.0,x(V)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@10
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Nb)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Ta)=0.0,x(V)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Nb),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@11
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Nb)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(V),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@12
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Nb)=0.0,x(W)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(V),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@13
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(W)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(V),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@14
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Nb)=0.0,x(V)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@15
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(W)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(V)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@16
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(Ta)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(V)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(Ta),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@17
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Nb)=0.0,x(Ta)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@18
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(Ta)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@19
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(Ta)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@20
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Mo)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Nb)=0.0,x(Ta)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Mo),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@21
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Mo)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(V),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@22
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Mo)=0.0,x(W)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(V),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@23
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(W)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(V),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@24
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Mo)=0.0,x(V)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@25
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(V)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@26
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(V)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(Ta),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@27
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Mo)=0.0,x(Ta)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@28
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Ta)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@29
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Ta)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@30
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Nb)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Ta)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Nb),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@31
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Mo)=0.0,x(Nb)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Ta),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@32
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Nb)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Ta),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@33
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Nb)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Ta),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@34
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Nb)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(Ta),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@35
+s-co T=1000,n=1,p=1e5
+s-co x(Cr)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Mo)=0.0,x(Nb)=0.0,x(Ta)=0.0,x(Al)=None;
+c-eq
+show x(Cr),x(V),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@36
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Cr)=0.0,x(Hf)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(V),x(W)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@37
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Cr)=0.0,x(W)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(V),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@38
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(W)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(V),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@39
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Cr)=0.0,x(V)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@40
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(V)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@41
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(Ta)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(V)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(Ta),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@42
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Cr)=0.0,x(Ta)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@43
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Ta)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@44
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Ta)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@45
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Nb)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Ta)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Nb),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@46
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Cr)=0.0,x(Nb)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Ta),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@47
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Nb)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Ta),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@48
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Nb)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Ta),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@49
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Nb)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(Ta),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@50
+s-co T=1000,n=1,p=1e5
+s-co x(Mo)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Nb)=0.0,x(Ta)=0.0,x(Al)=None;
+c-eq
+show x(Mo),x(V),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@51
+s-co T=1000,n=1,p=1e5
+s-co x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(Zr)=0.0,x(Al)=None;
+c-eq
+show x(Nb),x(Ta),x(V),x(W),x(Hf)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@52
+s-co T=1000,n=1,p=1e5
+s-co x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(Hf)=0.0,x(Al)=None;
+c-eq
+show x(Nb),x(Ta),x(V),x(W),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@53
+s-co T=1000,n=1,p=1e5
+s-co x(Nb)=0.2,x(Ta)=0.2,x(V)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(W)=0.0,x(Al)=None;
+c-eq
+show x(Nb),x(Ta),x(V),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@54
+s-co T=1000,n=1,p=1e5
+s-co x(Nb)=0.2,x(Ta)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(V)=0.0,x(Al)=None;
+c-eq
+show x(Nb),x(Ta),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@55
+s-co T=1000,n=1,p=1e5
+s-co x(Nb)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(Ta)=0.0,x(Al)=None;
+c-eq
+show x(Nb),x(V),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+@@56
+s-co T=1000,n=1,p=1e5
+s-co x(Ta)=0.2,x(V)=0.2,x(W)=0.2,x(Hf)=0.2,x(Zr)=0.2,x(Cr)=0.0,x(Mo)=0.0,x(Nb)=0.0,x(Al)=None;
+c-eq
+show x(Ta),x(V),x(W),x(Hf),x(Zr)
+show np(fcc_a1)
+show np(fcc_l12)
+show np(bcc_a2)
+show np(bcc_b2)
+set-int

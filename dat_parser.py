@@ -12,7 +12,8 @@ for x in range(len(file_dump)/8):
     for out_str in file_dump[index : index + 8]:
         temp_list.append(str(eval(out_str.split('=')[1])))
     final_csv_out.append(temp_list)
-with open('results_raw.csv', 'wb') as f2:
+final_csv_out.sort(key = lambda x: float(x[7]), reverse = True)
+with open('results_new.csv', 'wb') as f2:
     csv_writer = csv.writer(f2, dialect = 'excel')
     csv_writer.writerow(heading)
     csv_writer.writerows(final_csv_out)
