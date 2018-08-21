@@ -19,8 +19,11 @@ show np(c14_laves)
 show np(c15_laves)
 show np(hcp_zn)
 show np(ni3ti_d024)
-show np(fcc_l12)
+show np(fcc_l12#1)
+show np(fcc_l12#2)
 show np(liquid)
+show np(bcc_b2#1)
+show np(bcc_b2#2)
 """
 with open('macro.tcm','w') as f:
     f.write(init_str)
