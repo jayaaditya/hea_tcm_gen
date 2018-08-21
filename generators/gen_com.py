@@ -2,6 +2,7 @@ import itertools
 from sys import argv
 
 BASE_DIR = '/home/jaya-aditya/repos/hea_tcm_gen/'
+# initial string for setti
 init_str = """set-log single_phase,,, 
 set-echo
 go data
@@ -15,6 +16,7 @@ out
 @&
 """
 elements = ['Cr','Mo','Nb','Ta','V','W','Hf','Zr']
+# for each of 8c5 combinations, the 5 elements in the combination are set to 0.2, rest are set to 0.0
 print_str="""s-co T=%s,n=1,p=1e5
 s-co x(%s)=0.2,x(%s)=0.2,x(%s)=0.2,x(%s)=0.2,x(%s)=0.2,x(%s)=0.0,x(%s)=0.0,x(%s)=0.0,x(Al)=None;
 c-eq
@@ -45,6 +47,7 @@ show np(sigma)
 """
 comment = "@@%d\n"
 end_str = "set-int\n"
+# to print iteration number
 counter = 0
 with open(BASE_DIR+'tcm_files/tc_eq_elements_'+argv[1].strip()+'.tcm','w') as f1:
     f1.write(init_str)
@@ -57,6 +60,6 @@ with open(BASE_DIR+'tcm_files/tc_eq_elements_'+argv[1].strip()+'.tcm','w') as f1
             temp.remove(i)
         print temp
         f,g,h = temp
-        f1.write(comment %(counter))
+        f1.write(comment %(counter)) # print iteration number
         f1.write(print_str %(argv[1].strip(),a,b,c,d,e,f,g,h,a,b,c,d,e))
     f1.write(end_str)
